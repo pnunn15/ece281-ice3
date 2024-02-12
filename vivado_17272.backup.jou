@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb 12 07:39:24 2024
+# Process ID: 17272
+# Current directory: C:/ECE281/ece281-ice3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2896 C:\ECE281\ece281-ice3\fullAdder.xpr
+# Log file: C:/ECE281/ece281-ice3/vivado.log
+# Journal file: C:/ECE281/ece281-ice3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE281/ece281-ice3/fullAdder.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top top_basys3_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_ip_catalog
+update_compile_order -fileset sim_1
+set_property SOURCE_SET {} [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/ECE281/ece281-ice3/src/hdl/top_basys3.vhd C:/ECE281/ece281-ice3/src/hdl/halfAdder.vhd}
+update_compile_order -fileset sim_1
+launch_simulation
+source top_basys3_tb.tcl
+close_sim
