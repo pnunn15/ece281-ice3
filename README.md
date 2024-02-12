@@ -28,4 +28,4 @@ Assert statements of other severity levels will be reported, but not fail the wo
 ![Full Adder Waveform](WAVEFORMPICTURE.png)
 
 ## Documentation
-Todo
+C3C Alex sick helped me fix my concurrent statement in top_basys3.vhd. In the testbench, he helped me to avoid errors by initializing my signals to zero. He also helped me realize to use a truth table for filling in the assert statements. He helped me to fix the simulation sources by adding the top_basys3.vhd to top module and including the rest as well as halfadder.vhd.
